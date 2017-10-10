@@ -17,6 +17,7 @@ paramgrid  =   {
 - use gridsearch cv and input decisionTree regressor( use random state = 9, * mandatory), and paramgrid
 - find predictions for X_test
 - find r_square and best parameters
+- use np.random.seed(9) in function
 
 
 - Should return

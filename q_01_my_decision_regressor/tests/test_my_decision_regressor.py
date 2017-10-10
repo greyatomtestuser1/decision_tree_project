@@ -1,5 +1,4 @@
-import sys, os
-sys.path.append(os.path.join(os.path.dirname(os.curdir)))
+
 
 from unittest import TestCase
 
@@ -17,7 +16,7 @@ X = data.iloc[:,:-1]
 y = data.iloc[:,-1]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=9)
 
-from q_01_my_decision_regressor.build import my_decision_regressor
+from ..build import my_decision_regressor
 
 class TestMy_decision_regressor(TestCase):
     def test_my_decision_regressor(self):

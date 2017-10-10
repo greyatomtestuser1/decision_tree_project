@@ -1,5 +1,3 @@
-import sys, os
-sys.path.append(os.path.join(os.path.dirname(os.curdir)))
 
 from unittest import TestCase
 
@@ -16,7 +14,7 @@ param_grid = { "max_depth" : [ 8, 10, 15, 20],
              "max_leaf_nodes": [2, 5, 9, 15, 20],
              "min_impurity_decrease": [0.1, 0.2, 0.3, 0.5]}
 
-from q_02_my_decision_classifier.build import my_decision_classifier
+from ..build import my_decision_classifier
 
 class TestMy_decision_classifier(TestCase):
     def test_my_decision_classifier(self):
