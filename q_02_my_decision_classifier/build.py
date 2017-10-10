@@ -1,3 +1,4 @@
+#default imports
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
@@ -15,15 +16,5 @@ param_grid = { "max_depth" : [ 8, 10, 15, 20],
              "max_leaf_nodes": [2, 5, 9, 15, 20],
              "min_impurity_decrease": [0.1, 0.2, 0.3, 0.5]}
 
-def my_decision_classifier(X_train, X_test, y_train, y_test, param_grid, n_iter_search):
-    decision_class = DecisionTreeClassifier(random_state=9)
+**write your solution here**
 
-    rs_cv = RandomizedSearchCV(decision_class, param_distributions=param_grid, n_iter=n_iter_search)
-    rs_cv.fit(X_train, y_train)
-
-    best_params = rs_cv.best_params_
-    y_pred = rs_cv.predict(X_test)
-
-    accuracy = accuracy_score(y_test, y_pred)
-
-    return accuracy, best_params
