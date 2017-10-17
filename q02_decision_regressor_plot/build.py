@@ -11,15 +11,11 @@ X = data.iloc[:, :-1]
 y = data.iloc[:, -1]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=9)
 
-param_grid = {"max_depth": [2, 5, 10, 15, 20, 25, 30, 35, 40, 50, 60, 70]}
-parameter = 'max_depth'
-
 
 # Write your solution here :
 
-
-def decision_regressor_plot(grid_obj1, param_grid, parameter, X_train, X_test, y_train, y_test):
-    rs_cv = RandomizedSearchCV(grid_obj1, param_distributions=param_grid, n_iter=12)
+def decision_regressor_plot(grid_obj1, param_grid, parameter, X_train, y_train):
+    rs_cv = RandomizedSearchCV(grid_obj1, param_distributions=param_grid, n_iter=10)
     grid_obj = rs_cv.fit(X_train, y_train)
     mean_test_scores = grid_obj.cv_results_['mean_test_score']
     mean_train_scores = grid_obj.cv_results_['mean_train_score']
@@ -34,4 +30,5 @@ def decision_regressor_plot(grid_obj1, param_grid, parameter, X_train, X_test, y
     plt.show()
 
 
-decision_regressor_plot(DecisionTreeRegressor(), param_grid, parameter, X_train, X_test, y_train, y_test)
+decision_regressor_plot(DecisionTreeRegressor(), {"max_depth": [2, 8, 10, 15, 20, 25, 30, 35, 45, 50]},
+                        'max_depth', X_train, y_train)

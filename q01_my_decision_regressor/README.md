@@ -1,6 +1,6 @@
-# decision_tree_project
+# Decision tree regressor
 
-### Task 1: Write a function called my_decision_regressor():
+## Write a function called `my_decision_regressor` that :
 
 - Accepts the following parameters:
     * X_train, X_test, y_train, y_test & paramgrid
