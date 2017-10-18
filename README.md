@@ -1,6 +1,4 @@
-# decision_tree_project
-
-## project level readme
+# Decision Tree Project
 
 ## What have we learnt so far 
 We have seen how to clean the data and how to select features and learnt how to apply the following:
