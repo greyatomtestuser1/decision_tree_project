@@ -16,12 +16,10 @@ param_grid = {"max_depth": [8, 10, 15, 20],
               "max_leaf_nodes": [2, 5, 9, 15, 20],
               "min_impurity_decrease": [0.1, 0.2, 0.3, 0.5]}
 
-n_iter_search = 10
-
 
 # Write your solution here :
 
-def my_decision_classifier(X_train, X_test, y_train, y_test, param_grid, n_iter_search):
+def my_decision_classifier(X_train, X_test, y_train, y_test, param_grid, n_iter_search=10):
     decision_class = DecisionTreeClassifier(random_state=9)
 
     rs_cv = RandomizedSearchCV(decision_class, param_distributions=param_grid, n_iter=n_iter_search)

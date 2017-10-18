@@ -1,25 +1,27 @@
-# decision_tree_project
+# Observing variation between error and max depth
 
-### Task 1: Write a function called my_decision_regressor():
+If we can observe what is actually happening as we increase the maximum depth( the length of the longest path from a root to a leaf) 
+along with the variation in errors we can get to know of that how depth is having an effect over error. 
+ 
+## Write a function called decision_regressor_plot that :
+- Plots the variation between depth and mean score.
+- Plots mean_test_score and mean_train_score vs max_depth.
+- Uses RandomizedSearchCV. 
 
-- Accepts the following parameters:
-    * X_train, X_test, y_train, y_test & paramgrid
-***
-we made your life simpler use this parameters in paramgrid
+### Parameters:
 
-paramgrid  =   {
+| Parameter | dtype | argument type | default value | description |
+| --- | --- | --- | --- | --- |
+| grid_obj1 | Model | compulsory | |Model to be implemented  |
+| param_grid | Dictionary | compulsory | | Dictionary containing ten values of max_depth |
+| parameter | String | compulsory | | string named as max_depth |
+| X_train | DataFrame | compulsory | | Dataframe containing feature variables for training |
+| y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
+    
+    
+Note :
+While using the RandomizedSearchCV use the n_iter parameter as according to the values you are giving in max_depth,
+like for 10 values use n_iter as 10.
 
-              "max_depth" : [ 2, 3, 5, 6, 8, 10],
-              "max_leaf_nodes": [5, 10, 15, 20], 
-             "min_impurity_split": [0.1, 0.2, 0.3]
-             }
- ***
-- use gridsearch cv and input decisionTree regressor( use random state = 9, * mandatory), and paramgrid
-- find predictions for X_test
-- find r_square and best parameters
-- use np.random.seed(9) in function
-
-
-- Should return
-    * r_square error
-    * best paramaters
+Hint :
+Use grid_obj1 as DecisionTreeRegressor.

@@ -17,10 +17,11 @@ param_grid = {"max_depth": [8, 10, 15, 20],
 
 class TestMy_decision_classifier(TestCase):
     def test_my_decision_classifier(self):
+
         # Input parameters tests
         args = getargspec(my_decision_classifier)
         self.assertEqual(len(args[0]), 6, "Expected arguments %d, Given %d" % (6, len(args[0])))
-        self.assertEqual(args[3], None, "Expected default values do not match given default values")
+        self.assertEqual(args[3], (10,), "Expected default values do not match given default values")
 
         # Return data types
         np.random.seed(9)
@@ -30,7 +31,7 @@ class TestMy_decision_classifier(TestCase):
                               "Expected data type for return value is `Float`, you are returning %s" % (
                                   type(accuracy)))
         self.assertIsInstance(best_params, dict,
-                              "Expected data type for return value is `Float`, you are returning %s" % (
+                              "Expected data type for return value is `Dictionary`, you are returning %s" % (
                                   type(best_params)))
 
         # Return value tests

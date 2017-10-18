@@ -31,5 +31,3 @@ def decision_classifier_plot(grid_obj1, param_grid, parameter, X_train, y_train)
     plt.ylabel('mean scores')
     plt.show()
 
-
-decision_classifier_plot(DecisionTreeClassifier(), param_grid, 'max_depth', X_train, y_train)

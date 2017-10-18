@@ -1,25 +1,32 @@
 # Decision tree regressor
 
+In this assignment you will learn to make a decision tree regressor.
+
 ## Write a function called `my_decision_regressor` that :
+- Uses gridsearch cv and DecisionTreeRegressor  
+- Find predictions for X_test using the model fitted in X_train and y_train.
+- Measures r_square and best parameters
 
-- Accepts the following parameters:
-    * X_train, X_test, y_train, y_test & paramgrid
-***
-we made your life simpler use this parameters in paramgrid
+### Parameters:
 
-paramgrid  =   {
+| Parameter | dtype | argument type | default value | description |
+| --- | --- | --- | --- | --- |
+| X_train | DataFrame | compulsory | | Dataframe containing feature variables for training|
+| X_test | DataFrame | compulsory | | Dataframe containing feature variables for testing|
+| y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
+| y_test | Series/DataFrame | compulsory | | Testing dataset target Variable |
+| param_grid | Dictionary | compulsory | | Values regarding max depth ,max leap nodes,max impurity decrease |
 
-              "max_depth" : [ 2, 3, 5, 6, 8, 10],
-              "max_leaf_nodes": [5, 10, 15, 20], 
-             "min_impurity_split": [0.1, 0.2, 0.3]
-             }
- ***
-- use gridsearch cv and input decisionTree regressor( use random state = 9, * mandatory), and paramgrid
-- find predictions for X_test
-- find r_square and best parameters
-- use np.random.seed(9) in function
+### Returns:
+
+| Return | dtype | description |
+| --- | --- | --- |
+| r_square | float | R-squared error |
+| best_params | dictionary | best parameters selected by model out of param_grid |
 
 
-- Should return
-    * r_square error
-    * best paramaters
+We have made your life simpler by having preloaded the grid parameters for you.
+
+Note :
+- use np.random.seed(9) in function and use random state = 9.
+- While using GridSearchCV set the cv parameter as 5.

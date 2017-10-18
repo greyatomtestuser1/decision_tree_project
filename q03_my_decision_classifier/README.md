@@ -1,23 +1,33 @@
-# decision_tree_project
+# Decision tree Classifier
 
-### Task 2: Write a function called my_decision_classifier()
+In this assignment you will learn to make a decision tree classifier.
 
-- Accepts the following parameters:
-    * X_train, X_test, y_train, y_test, param_grid, n_iter_search   
-***
-param_grid = {
+## Write a function called `my_decision_regressor` that :
+- Uses gridsearch cv and DecisionTreeClassifier.  
+- Find predictions for X_test using the model fitted in X_train and y_train.
+- Measures r_square and best parameters.
 
-             "max_depth" : [ 8, 10, 15, 20],
-             "max_leaf_nodes": [2, 5, 9, 15, 20],
-             "min_impurity_decrease": [0.1, 0.2, 0.3, 0.5]
-             }
+### Parameters :
 
-***             
-  - use randomized search cv and input decisionTree Classifier( use random state = 9, * mandatory*), paramgrid and n_iter_search (Number of iterations the search will be run) = 10
-  - find predictions for X_test
-  - find accuracy and best parameters
+| Parameter | dtype | argument type | default value | description |
+| --- | --- | --- | --- | --- |
+| X_train | DataFrame | compulsory | | Dataframe containing feature variables for training|
+| X_test | DataFrame | compulsory | | Dataframe containing feature variables for testing|
+| y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
+| y_test | Series/DataFrame | compulsory | | Testing dataset target Variable |
+| param_grid | Dictionary | compulsory | | Values regarding max depth ,max leap nodes,max impurity decrease |
+| n_iter_search | integer | optional | 10 | no. of iterations |
 
 
-- Should return
-    * predictions for X_test
-    * trained RandomizedSearchCV object
+### Returns:
+
+| Return | dtype | description |
+| --- | --- | --- |
+| accuracy | float |Accuracy score of model |
+| best_params| dictionary | best parameters selected by model out of param_grid |
+
+
+We have made your life simpler by having pre-loaded the grid parameters for you.
+
+Note :
+- Use random state = 9 in function while using DecisionTreeClassifier.
