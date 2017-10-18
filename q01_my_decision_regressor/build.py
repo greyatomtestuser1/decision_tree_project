@@ -16,13 +16,5 @@ param_grid = {"max_depth": [2, 3, 5, 6, 8, 10, 15, 20, 30, 50],
 
 
 # Write your solution here :
-def my_decision_regressor(X_train, X_test, y_train, y_test, param_grid):
-    decision_reg = DecisionTreeRegressor(random_state=9)
-    gs_cv = GridSearchCV(decision_reg, param_grid=param_grid, cv=5)
-    gs_cv.fit(X_train, y_train)
-    best_params = gs_cv.best_params_
-    y_pred = gs_cv.best_estimator_.predict(X_test)
 
-    r_square = r2_score(y_test, y_pred)
-    return r_square, best_params
 
