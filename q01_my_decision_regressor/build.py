@@ -12,9 +12,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 param_grid = {"max_depth": [2, 3, 5, 6, 8, 10, 15, 20, 30, 50],
               "max_leaf_nodes": [2, 3, 4, 5, 10, 15, 20],
-              "min_impurity_decrease": [0.1, 0.2, 0.3, 0.5]}
+              "max_features": [4, 8, 20, 25]}
 
 
 # Write your solution here :
-
-

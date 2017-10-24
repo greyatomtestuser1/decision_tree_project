@@ -12,7 +12,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 param_grid = {"max_depth": [8, 10, 15, 20],
               "max_leaf_nodes": [2, 5, 9, 15, 20],
-              "min_impurity_decrease": [0.1, 0.2, 0.3, 0.5]}
+              "max_features": [1, 2, 3, 5]}
 
 
 class TestMy_decision_classifier(TestCase):
@@ -36,6 +36,6 @@ class TestMy_decision_classifier(TestCase):
 
         # Return value tests
 
-        self.assertAlmostEqual(accuracy, 0.648648648649, 5, "Return value does not match expected value")
-        self.assertEqual(dict(best_params), {'max_leaf_nodes': 5, 'min_impurity_decrease': 0.2, 'max_depth': 15},
+        self.assertAlmostEqual(accuracy, 0.751351351351, 5, "Return value does not match expected value")
+        self.assertEqual(dict(best_params), {'max_leaf_nodes': 5, 'max_features': 3, 'max_depth': 10},
                          "Return best parameters does not match expected best parameters")

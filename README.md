@@ -1,6 +1,7 @@
 # Decision Tree Project
+
 In this project we are going to implement decision tree methods. It is a predictive model based on a branching series of Boolean tests.
-It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed.
+It breaks down a Dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed.
 The final result is a tree with decision nodes and leaf nodes.
 Let's try to solve both a regression problem and a classification problem using decision trees.
 
@@ -25,10 +26,10 @@ By the completing this Assignment :-
 - Implementation of Grid search cv and Randomized search Cv.
 - You will get to learn how hyper parameter tuning helps in model performance.
 
-## About the dataset
+## About the Dataset
 
 **For Decision tree Regressor**
-- We are using the same dataset of Housing prices, we had used for Linear Regression.
+- We are using the same Dataset of Housing prices, we had used for Linear Regression.
 
 **For Decision tree Classifier**
-- We are using the same dataset of Loan Prediction, we had used it earlier in Logistic Regression.
+- We are using the same Dataset of Loan Prediction, we had used it earlier in Logistic Regression.

@@ -15,7 +15,7 @@ In this assignment you will learn to make a decision tree classifier.
 | X_test | DataFrame | compulsory | | Dataframe containing feature variables for testing|
 | y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
 | y_test | Series/DataFrame | compulsory | | Testing dataset target Variable |
-| param_grid | Dictionary | compulsory | | Values regarding max depth ,max leap nodes,max impurity decrease |
+| param_grid | Dictionary | compulsory | | Values regarding max_depth ,max_leaf_nodes, max_features |
 | n_iter_search | integer | optional | 10 | no. of iterations |
 
 

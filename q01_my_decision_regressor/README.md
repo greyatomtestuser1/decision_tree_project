@@ -15,7 +15,7 @@ In this assignment you will learn to make a decision tree regressor.
 | X_test | DataFrame | compulsory | | Dataframe containing feature variables for testing|
 | y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
 | y_test | Series/DataFrame | compulsory | | Testing dataset target Variable |
-| param_grid | Dictionary | compulsory | | Values regarding max depth ,max leap nodes,max impurity decrease |
+| param_grid | Dictionary | compulsory | | Values regarding max_depth ,max_leaf_nodes, max_features |
 
 ### Returns:
 
@@ -28,5 +28,5 @@ In this assignment you will learn to make a decision tree regressor.
 We have made your life simpler by having preloaded the grid parameters for you.
 
 Note :
-- use np.random.seed(9) in function and use random state = 9.
+- Use random state = 9 while using `DecisionTreeRegressor`.
 - While using GridSearchCV set the cv parameter as 5.
