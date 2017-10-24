@@ -16,20 +16,20 @@ We have seen how to clean the data and how to select features and learnt how to 
 
 ## What are we going to do in this project ?
 - We are going to implement decision tree methods as for both regression and classification problem.
-- We will observe that how the model learns and performs with the data set given.
+- We will observe how the model learns and performs with the data set given.
 
 ## Why solve this assignment?
 
 By the completing this Assignment :-
 
 - You will get hands-on practice on how decision tree is performing for both classification and Regression and how it is different from the Linear regression and Logistic Regression
-- Implementation of Grid search cv and Randomized search Cv.
+- Implementation of Grid search CV and Randomized search CV.
 - You will get to learn how hyper parameter tuning helps in model performance.
 
 ## About the Dataset
 
 **For Decision tree Regressor**
-- We are using the same Dataset of Housing prices, we had used for Linear Regression.
+- We are using the same Dataset of House prices, we had used for Linear Regression.
 
 **For Decision tree Classifier**
 - We are using the same Dataset of Loan Prediction, we had used it earlier in Logistic Regression.
