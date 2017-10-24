@@ -8,6 +8,13 @@ along with the variation in errors we can get to know of that how depth is havin
 - Plots mean_test_score and mean_train_score vs max_depth.
 - Uses RandomizedSearchCV. 
 
+Note :
+While using the RandomizedSearchCV use the n_iter parameter as according to the values you are giving in max_depth,
+like for 10 values use n_iter as 10.
+
+Hint :
+Use grid_obj1 as DecisionTreeRegressor.
+
 ### Parameters:
 
 | Parameter | dtype | argument type | default value | description |
@@ -18,10 +25,5 @@ along with the variation in errors we can get to know of that how depth is havin
 | X_train | DataFrame | compulsory | | Dataframe containing feature variables for training |
 | y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
     
-    
-Note :
-While using the RandomizedSearchCV use the n_iter parameter as according to the values you are giving in max_depth,
-like for 10 values use n_iter as 10.
-
-Hint :
-Use grid_obj1 as DecisionTreeRegressor.
+### Returns
+None
