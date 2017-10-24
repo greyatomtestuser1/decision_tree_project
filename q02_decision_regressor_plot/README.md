@@ -4,27 +4,21 @@ If we can observe what is actually happening as we increase the maximum depth( t
 along with the variation in errors we can get to know of that how depth is having an effect over error. 
  
 ## Write a function called decision_regressor_plot that :
-- Plots the variation between depth and mean score.
-- Plots mean_test_score and mean_train_score vs max_depth.
-- Uses RandomizedSearchCV. 
+- Plots the variation between depth and mean square error.
+- Plots test_scores vs max_depth and train_scores vs max_depth (in the same plot).
 
-Note :
-While using the RandomizedSearchCV use the n_iter parameter as according to the values you are giving in max_depth,
-like for 10 values use n_iter as 10.
-
-Hint :
-Use grid_obj1 as DecisionTreeRegressor.
 
 ### Parameters:
 
 | Parameter | dtype | argument type | default value | description |
 | --- | --- | --- | --- | --- |
-| grid_obj1 | Model | compulsory | |Model to be implemented  |
-| param_grid | Dictionary | compulsory | | Dictionary containing ten values of max_depth |
-| parameter | String | compulsory | | string named as max_depth |
 | X_train | DataFrame | compulsory | | Dataframe containing feature variables for training |
+| X_test | DataFrame | compulsory | | Dataframe containing feature variables for testing |
 | y_train | Series/DataFrame | compulsory | | Training dataset target Variable |
-    
+| y_test | Series/DataFrame | compulsory | | Test dataset target Variable |
+| depths | List | compulsory | | List of depths to be checked for model performance|
+
+
 ### Returns
 None
 
