@@ -27,3 +27,6 @@ Use grid_obj1 as DecisionTreeRegressor.
     
 ### Returns
 None
+
+Please Compare your plot with the decision_regressor_plot.png in the images directory
+https://github.com/commit-live-students/decision_tree_project/blob/master/images/decision_regressor_plot.png

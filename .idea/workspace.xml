@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce206727-916a-4056-9a7f-07ffb92e3cfd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/q02_decision_regressor_plot/README.md" afterPath="$PROJECT_DIR$/q02_decision_regressor_plot/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/q04_decision_classifier_plot/README.md" afterPath="$PROJECT_DIR$/q04_decision_classifier_plot/README.md" />
     </list>
@@ -20,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="350">
+              <first_editor relative-caret-position="578">
                 <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -94,6 +93,21 @@
             <path>
               <item name="decision_tree_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="decision_tree_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="decision_tree_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="decision_tree_project" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="decision_tree_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="decision_tree_project" type="462c0819:PsiDirectoryNode" />
+              <item name="q02_decision_regressor_plot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="decision_tree_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="decision_tree_project" type="462c0819:PsiDirectoryNode" />
+              <item name="q04_decision_classifier_plot" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,33 +320,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/q02_decision_regressor_plot/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="476">
-            <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/q03_my_decision_classifier/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/q04_decision_classifier_plot/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="258">
-            <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             <folding />
           </first_editor>
           <second_editor />
@@ -347,10 +339,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/q04_decision_classifier_plot/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="561">
+            <caret line="33" column="109" lean-forward="false" selection-start-line="33" selection-start-column="109" selection-end-line="33" selection-end-column="109" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/q02_decision_regressor_plot/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="251">
+            <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="108" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="350">
+          <first_editor relative-caret-position="578">
             <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
             <folding />
           </first_editor>

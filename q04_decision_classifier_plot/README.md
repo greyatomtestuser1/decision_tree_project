@@ -29,3 +29,6 @@ Use grid_obj1 as DecisionTreeClassifier.
     
 ### Returns
 None.
+
+Please Compare your plot with the decision_classifier_plot.png in the images directory
+https://github.com/commit-live-students/decision_tree_project/blob/master/images/decision_classifier_plot.png
