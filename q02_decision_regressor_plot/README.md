@@ -23,4 +23,4 @@ along with the variation in errors we can get to know of that how depth is havin
 None
 
 Please Compare your plot with the decision_regressor_plot.png in the images directory
-https://github.com/commit-live-admin/greyatomlib/blob/master/greyatomlib/decision_tree_project/images/decision_regressor_plot.png
+https://github.com/commit-live-students/decision_tree_project/blob/master/images/decision_regressor_plot.png
